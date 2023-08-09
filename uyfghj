@@ -1,0 +1,5 @@
+http = urllib3.PoolManager()
+    response = http.request("GET", url)
+    response_data = response.data
+    html_content = response_data.decode()
+    return html_content
