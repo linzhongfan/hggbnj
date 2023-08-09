@@ -1,0 +1,13 @@
+requests 代码
+# file_name:Crawler_requests.py
+import requests
+
+
+def download_content(url):
+    """
+    第一个函数，用来下载网页，返回网页内容
+    参数 url 代表所要下载的网页网址。
+    整体代码和之前类似
+    """
+    response = requests.get(url).text
+    return response
